@@ -2,8 +2,8 @@ name: Deployment Exercise 1
 on: push
 jobs:
   deploy:
-    runs_on: ubuntu_lates
-      spteps:
+    runs_on: ubuntu_latest
+      steps:
         - name: Get code
           uses: actions/checkout@v3
         - name: Install dependencies

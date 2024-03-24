@@ -3,7 +3,7 @@ on: push
 jobs:
   lint:
     runs_on: ubuntu_latest
-      spteps:
+      steps:
         - name: Get code
           uses: actions/checkout@v3
         - name: Install dependencies
@@ -12,7 +12,7 @@ jobs:
           run: npm run lint
   test:
     runs_on: ubuntu_latest
-      spteps:
+      steps:  
         - name: Get code
           uses: actions/checkout@v3
         - name: Install dependencies
@@ -21,7 +21,7 @@ jobs:
           run: npm run test
   deploy:
     runs_on: ubuntu_lastes
-      spteps:
+      steps:
         - name: Get code
           uses: actions/checkout@v3
         - name: Install dependencies
