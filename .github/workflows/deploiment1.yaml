@@ -2,7 +2,7 @@ name: Deployment Exercise 1
 on: push
 jobs:
   deploy:
-    runs_on: ubuntu_lastes
+    runs_on: ubuntu_lates
       spteps:
         - name: Get code
           uses: actions/checkout@v3
